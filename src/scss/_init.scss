@@ -1,0 +1,56 @@
+* {
+   box-sizing: border-box;
+
+   &::before,
+   &::after {
+      box-sizing: border-box;
+   }
+
+   &:focus:not(:focus-visible) {
+      outline: none;
+   }
+}
+
+html,
+body {
+   font-family: 'Roboto', sans-serif;
+   font-weight: normal;
+   scroll-behavior: smooth;
+}
+
+ul {
+   padding-left: 0;
+
+   li {
+      list-style: none;
+      cursor: default;
+   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   padding: 0;
+   margin: 0;
+}
+
+a {
+   text-decoration: none;
+   color: #000000;
+}
+
+.sprite-icon {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   width: 120rem;
+   margin: 0 auto;
+}

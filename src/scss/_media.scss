@@ -1,0 +1,247 @@
+@media (max-width: 62em) {
+   .container {
+      width: 100%;
+      padding: 0 15rem;
+   }
+   .footer {
+      &__container {
+         &::before {
+            left: 10rem;
+         }
+         &::after {
+            right: 0;
+            transform: translate(-25%, -50%);
+         }
+      }
+   }
+}
+@media (max-width: 48em) {
+   .container {
+      width: 100%;
+      padding: 0 5rem;
+   }
+   .header {
+      &__tel-text {
+         flex-direction: column;
+      }
+
+      a:last-child {
+         margin-top: .8rem;
+      }
+   }
+   .main-display {
+      &__header {
+         font-size: 4rem;
+         line-height: 100%;
+      }
+
+      &__menu {
+         display: none;
+      }
+
+      &__left {
+         padding-top: 7rem;
+      }
+
+      &__right {
+         min-width: 31.8rem;
+         min-height: 42.3rem;
+      }
+   }
+   .about {
+      padding-bottom: 12.4rem;
+      background: #FFFFFF url(../img/icons/icons.svg#about-cover-mobile);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      &__header {
+         margin: 5rem 0;
+      }
+
+      &__items {
+         grid-template-columns: repeat(1, 100%);
+         gap: 6rem 0;
+      }
+   }
+   .reviews {
+      &__wrap {
+         padding: 5rem 0 4rem;
+      }
+
+      &__slide {
+         flex: none;
+         opacity: 1;
+         margin: 3.5rem;
+         width: 70%;
+      }
+   }
+   .footer {
+      &__container {
+         &::before {
+            left: 17%;
+            top: 45%;
+            width: 8.6rem;
+            height: 9.7rem;
+            background-size: cover;
+         }
+
+         &::after {
+            right: 0;
+            width: 4rem;
+            height: 4.5rem;
+            background-size: cover;
+         }
+      }
+
+      &__wrap {
+         padding: 9.5rem 0 4rem;
+      }
+   }
+   .modal {
+      &__inner {
+         padding: 3rem 9rem;
+         background: #FFFFFF url(../img/icons/icons.svg#modal-mask-mobile);
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+      }
+
+      &__inner-header {
+         margin-bottom: 1rem;
+      }
+
+      &__item {
+         width: 100%;
+         flex-direction: column;
+      }
+
+      &__input,
+      &__message {
+         width: 100%;
+      }
+
+      &__input {
+         min-height: 4.1rem;
+      }
+
+      &__message {
+         max-height: 9.5rem;
+      }
+
+      &__wrap-input {
+         &:first-child {
+            margin-bottom: 1.7rem;
+         }
+      }
+   }
+}
+
+@media (max-width: 30em) {
+   .header {
+      &__wrap {
+         flex-direction: column;
+      }
+
+      &__maps {
+         margin-top: 1.5rem;
+      }
+
+      &__maps-img,
+      &__tel-img,
+      &__inst {
+         display: none;
+      }
+   }
+   .choice-region {
+      &__wrapper {
+         transform: translate(-30%, -50%);
+      }
+      &__first {
+         top: 15rem;
+      }
+      &__second {
+         top: 21rem;
+      }
+      &__arrow {
+         right: 45%;
+      }
+   }
+   .main-display {
+      &__wrap {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      &__header {
+         font-size: 4rem;
+         line-height: 100%;
+         text-align: center;
+      }
+
+      &__center {
+         padding: 5rem 0;
+         margin: 0 auto;
+         width: 30rem;
+      }
+
+      &__left {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding-top: 1rem;
+      }
+
+      &__right {
+         display: none;
+      }
+   }
+   .about {
+      background: none;
+   }
+   .footer {
+      &__container {
+         &::before {
+            content: none;
+         }
+
+         &::after {
+            content: none;
+         }
+      }
+
+      &__wrap {
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+         padding: 4rem 0;
+
+         li {
+            font-weight: 400;
+         }
+      }
+
+      &__tel {
+         order: 1;
+      }
+
+      &__social {
+         order: 2;
+         align-items: center;
+         margin-top: 2rem;
+      }
+
+      &__about {
+         order: 3;
+         margin-top: 2rem;
+      }
+   }
+   .modal {
+      &__inner {
+         width: 90%;
+         padding: 3rem;
+         background: #FFFFFF;
+      }
+   }
+}
